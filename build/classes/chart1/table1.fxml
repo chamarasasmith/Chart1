@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chart1.FXMLDocumentController">
+   <children>
+      <TableView fx:id="table" layoutX="22.0" layoutY="38.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="324.0" AnchorPane.topAnchor="38.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="month1" prefWidth="85.0" text="Month" />
+            <TableColumn fx:id="income" prefWidth="92.0" text="Income" />
+        </columns>
+      </TableView>
+      <Button layoutX="225.0" layoutY="335.0" mnemonicParsing="false" onAction="#btn" prefHeight="25.0" prefWidth="102.0" text="Chart" />
+      <PieChart fx:id="pieChart" layoutX="291.0" layoutY="36.0" prefHeight="272.0" prefWidth="287.0" />
+   </children>
+</AnchorPane>
